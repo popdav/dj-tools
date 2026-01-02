@@ -42,8 +42,8 @@ def detect_key(file_path):
         print(f"Error detecting key: {e}")
         return None
 
-SPOTIFY_CLIENT_ID = "31b28dc5632c414b99b709a3d2cf47c9"
-SPOTIFY_CLIENT_SECRET = "063f22edff554f4cb66486366f4dd2c1"
+SPOTIFY_CLIENT_ID = ""
+SPOTIFY_CLIENT_SECRET = ""
 
 # Initialize client
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
@@ -123,7 +123,7 @@ def get_genre_from_musicbrainz(artist, title):
 
     return "Unknown"
 
-LASTFM_API_KEY = "e1783d5edefbd75fbb3e412fc9d6355d"
+LASTFM_API_KEY = ""
 
 def get_genre_from_lastfm(artist, title):
     try:
